@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RhJ-TM-8YM">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pokemon View Controller-->
+        <scene sceneID="aB5-u1-Djl">
+            <objects>
+                <viewController id="RhJ-TM-8YM" customClass="PokemonViewController" customModule="who_is_that_pokemon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EJ8-dc-bre">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Quién es este Pokémon?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yb-Sj-jNe">
+                                <rect key="frame" x="21" y="27" width="278" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puntaje: 0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXB-VX-ZF6">
+                                <rect key="frame" x="21" y="86.5" width="278" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="efU-1g-tJE">
+                                <rect key="frame" x="61.5" y="128.5" width="197" height="197.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="efU-1g-tJE" secondAttribute="height" multiplier="1:1" id="rZU-8n-zI3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sí, es un Pikachu" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YkU-Zf-xKB">
+                                <rect key="frame" x="21" y="328" width="278" height="25.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPe-Sf-q4K">
+                                <rect key="frame" x="21" y="380" width="278" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kPe-Sf-q4K" secondAttribute="height" multiplier="8:1" id="LFr-jo-O7I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Flaaffy">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSs-0x-5b8">
+                                <rect key="frame" x="21" y="423" width="278" height="34.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eSs-0x-5b8" secondAttribute="height" multiplier="8:1" id="Qb6-Cm-CvC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Staravia">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGg-aY-fab">
+                                <rect key="frame" x="21" y="465.5" width="278" height="34.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MGg-aY-fab" secondAttribute="height" multiplier="8:1" id="GZ5-FC-zmE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Carvanha">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNh-tN-XTt">
+                                <rect key="frame" x="21" y="508" width="278" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MNh-tN-XTt" secondAttribute="height" multiplier="8:1" id="4Eg-H8-fdC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Pikachu">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oIa-5i-Yk1"/>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MGg-aY-fab" firstAttribute="centerX" secondItem="EJ8-dc-bre" secondAttribute="centerX" id="0Gb-bL-InG"/>
+                            <constraint firstItem="kPe-Sf-q4K" firstAttribute="width" secondItem="EJ8-dc-bre" secondAttribute="width" multiplier="0.869565" id="2Jc-Z3-DIq"/>
+                            <constraint firstItem="kPe-Sf-q4K" firstAttribute="centerY" secondItem="EJ8-dc-bre" secondAttribute="centerY" multiplier="1.4" id="4YE-BO-oU4"/>
+                            <constraint firstItem="MNh-tN-XTt" firstAttribute="centerX" secondItem="EJ8-dc-bre" secondAttribute="centerX" id="7TZ-Ai-fWm"/>
+                            <constraint firstItem="YkU-Zf-xKB" firstAttribute="centerX" secondItem="EJ8-dc-bre" secondAttribute="centerX" id="8ap-4Y-cJM"/>
+                            <constraint firstItem="8yb-Sj-jNe" firstAttribute="centerY" secondItem="EJ8-dc-bre" secondAttribute="centerY" multiplier="0.2" id="8bP-5G-hSn"/>
+                            <constraint firstItem="eSs-0x-5b8" firstAttribute="centerX" secondItem="EJ8-dc-bre" secondAttribute="centerX" id="BGP-e3-Khz"/>
+                            <constraint firstItem="YkU-Zf-xKB" firstAttribute="centerY" secondItem="EJ8-dc-bre" secondAttribute="centerY" multiplier="1.2" id="Cao-3G-WsP"/>
+                            <constraint firstItem="8yb-Sj-jNe" firstAttribute="width" secondItem="EJ8-dc-bre" secondAttribute="width" multiplier="0.869565" id="I6n-mP-b2H"/>
+                            <constraint firstItem="efU-1g-tJE" firstAttribute="width" secondItem="EJ8-dc-bre" secondAttribute="width" multiplier="0.615942" id="PTZ-ji-qfJ"/>
+                            <constraint firstItem="efU-1g-tJE" firstAttribute="centerX" secondItem="EJ8-dc-bre" secondAttribute="centerX" id="Q40-nc-KYA"/>
+                            <constraint firstItem="FXB-VX-ZF6" firstAttribute="centerX" secondItem="EJ8-dc-bre" secondAttribute="centerX" id="Rak-SZ-gsI"/>
+                            <constraint firstItem="MNh-tN-XTt" firstAttribute="width" secondItem="EJ8-dc-bre" secondAttribute="width" multiplier="0.869565" id="RpB-9C-yAz"/>
+                            <constraint firstItem="eSs-0x-5b8" firstAttribute="width" secondItem="EJ8-dc-bre" secondAttribute="width" multiplier="0.869565" id="UYh-nA-msb"/>
+                            <constraint firstItem="MNh-tN-XTt" firstAttribute="centerY" secondItem="EJ8-dc-bre" secondAttribute="centerY" multiplier="1.85" id="Z0x-uB-5Qs"/>
+                            <constraint firstItem="FXB-VX-ZF6" firstAttribute="centerY" secondItem="EJ8-dc-bre" secondAttribute="centerY" multiplier="0.35" id="cgz-dW-bF9"/>
+                            <constraint firstItem="8yb-Sj-jNe" firstAttribute="centerX" secondItem="EJ8-dc-bre" secondAttribute="centerX" id="du0-tC-enA"/>
+                            <constraint firstItem="efU-1g-tJE" firstAttribute="centerY" secondItem="EJ8-dc-bre" secondAttribute="centerY" multiplier="0.8" id="h6f-34-W2T"/>
+                            <constraint firstItem="FXB-VX-ZF6" firstAttribute="width" secondItem="EJ8-dc-bre" secondAttribute="width" multiplier="0.869565" id="hsR-64-K49"/>
+                            <constraint firstItem="MGg-aY-fab" firstAttribute="width" secondItem="EJ8-dc-bre" secondAttribute="width" multiplier="0.869565" id="iGD-n3-2ew"/>
+                            <constraint firstItem="kPe-Sf-q4K" firstAttribute="centerX" secondItem="EJ8-dc-bre" secondAttribute="centerX" id="j1D-fr-Ukj"/>
+                            <constraint firstItem="MGg-aY-fab" firstAttribute="centerY" secondItem="EJ8-dc-bre" secondAttribute="centerY" multiplier="1.7" id="laC-tG-S8q"/>
+                            <constraint firstItem="eSs-0x-5b8" firstAttribute="centerY" secondItem="EJ8-dc-bre" secondAttribute="centerY" multiplier="1.55" id="mJz-wu-IwY"/>
+                            <constraint firstItem="YkU-Zf-xKB" firstAttribute="width" secondItem="EJ8-dc-bre" secondAttribute="width" multiplier="0.869565" id="sOZ-6k-fdb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="sxe-a0-BaB" kind="presentation" identifier="goToResults" modalPresentationStyle="fullScreen" id="EtA-Tk-xtH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vfg-0K-kop" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120" y="795"/>
+        </scene>
+        <!--Results View Controller-->
+        <scene sceneID="mLO-Eh-4cV">
+            <objects>
+                <viewController id="sxe-a0-BaB" customClass="ResultsViewController" customModule="who_is_that_pokemon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="497-cX-myR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perdiste, tu puntaje fue de 25." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KpJ-4S-0P8">
+                                <rect key="frame" x="24.5" y="415" width="271" height="50.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfb-Nl-0ml">
+                                <rect key="frame" x="21" y="506" width="278" height="38.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Vfb-Nl-0ml" secondAttribute="height" multiplier="36:5" id="8Uc-F6-igb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Jugar de nuevo">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="21"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pika" translatesAutoresizingMaskIntoConstraints="NO" id="OZ6-lb-sRR">
+                                <rect key="frame" x="24.5" y="92" width="271" height="270.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OZ6-lb-sRR" secondAttribute="height" multiplier="1:1" id="bjj-BN-9BQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡OOOPS! Perdiste" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8O-lj-Okr">
+                                <rect key="frame" x="24.5" y="56" width="271" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No, es un Pikachu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4H0-C6-Jk3">
+                                <rect key="frame" x="24.5" y="350.5" width="271" height="26"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="npb-YE-uHC"/>
+                        <color key="backgroundColor" red="0.92158359290000003" green="0.92158359290000003" blue="0.92158359290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4H0-C6-Jk3" firstAttribute="width" secondItem="497-cX-myR" secondAttribute="width" multiplier="0.845411" id="Cly-4v-dPo"/>
+                            <constraint firstItem="Vfb-Nl-0ml" firstAttribute="width" secondItem="497-cX-myR" secondAttribute="width" multiplier="0.869565" id="DFE-Mz-7CI"/>
+                            <constraint firstItem="4H0-C6-Jk3" firstAttribute="centerX" secondItem="497-cX-myR" secondAttribute="centerX" id="EEx-9R-nUU"/>
+                            <constraint firstItem="W8O-lj-Okr" firstAttribute="centerX" secondItem="497-cX-myR" secondAttribute="centerX" id="LUH-lo-R0G"/>
+                            <constraint firstItem="W8O-lj-Okr" firstAttribute="width" secondItem="497-cX-myR" secondAttribute="width" multiplier="0.845411" id="VMx-Zy-fyP"/>
+                            <constraint firstItem="W8O-lj-Okr" firstAttribute="centerY" secondItem="497-cX-myR" secondAttribute="centerY" multiplier="0.25" id="WHa-34-2RB"/>
+                            <constraint firstItem="KpJ-4S-0P8" firstAttribute="centerY" secondItem="497-cX-myR" secondAttribute="centerY" multiplier="1.55" id="XvW-Yx-FTF"/>
+                            <constraint firstItem="OZ6-lb-sRR" firstAttribute="centerY" secondItem="497-cX-myR" secondAttribute="centerY" multiplier="0.8" id="aza-8T-KsY"/>
+                            <constraint firstItem="Vfb-Nl-0ml" firstAttribute="centerY" secondItem="497-cX-myR" secondAttribute="centerY" multiplier="1.85" id="b6n-wl-ImI"/>
+                            <constraint firstItem="KpJ-4S-0P8" firstAttribute="width" secondItem="497-cX-myR" secondAttribute="width" multiplier="0.845411" id="fxI-O6-d9D"/>
+                            <constraint firstItem="OZ6-lb-sRR" firstAttribute="centerX" secondItem="497-cX-myR" secondAttribute="centerX" id="jUa-mG-3vE"/>
+                            <constraint firstItem="KpJ-4S-0P8" firstAttribute="centerX" secondItem="497-cX-myR" secondAttribute="centerX" id="n1L-kP-40X"/>
+                            <constraint firstItem="4H0-C6-Jk3" firstAttribute="centerY" secondItem="497-cX-myR" secondAttribute="centerY" multiplier="1.28" id="phS-v3-fYG"/>
+                            <constraint firstItem="OZ6-lb-sRR" firstAttribute="width" secondItem="497-cX-myR" secondAttribute="width" multiplier="0.845411" id="vT2-7h-fy2"/>
+                            <constraint firstItem="Vfb-Nl-0ml" firstAttribute="centerX" secondItem="497-cX-myR" secondAttribute="centerX" id="zaE-sa-PIi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7ka-GE-nL3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h42-9x-0YT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="795"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pika" width="158" height="158"/>
+        <image name="pikachu" width="85" height="85"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
