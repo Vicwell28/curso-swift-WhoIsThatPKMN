@@ -82,13 +82,10 @@
 		039F9DFE2898214F00B69144 /* who is that pokemon */ = {
 			isa = PBXGroup;
 			children = (
-				C17ECAB129A676DA00EE40C8 /* Assets */,
-				C17ECAAC29A6705300EE40C8 /* Extensions */,
-				C17ECA9929A66D6B00EE40C8 /* Model */,
+				C17ECAB829A6ACB300EE40C8 /* Vicwell */,
+				C17ECAB729A6ACAC00EE40C8 /* Platzi */,
 				039F9DFF2898214F00B69144 /* AppDelegate.swift */,
 				039F9E012898214F00B69144 /* SceneDelegate.swift */,
-				C17ECAA929A66E5100EE40C8 /* Controllers */,
-				C17ECAA829A66E3100EE40C8 /* Views */,
 				039F9E0A2898214F00B69144 /* LaunchScreen.storyboard */,
 				039F9E082898214F00B69144 /* Assets.xcassets */,
 				039F9E0D2898214F00B69144 /* Info.plist */,
@@ -151,6 +148,25 @@
 				C17ECAB429A676F400EE40C8 /* 2.jpeg */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		C17ECAB729A6ACAC00EE40C8 /* Platzi */ = {
+			isa = PBXGroup;
+			children = (
+				C17ECAB129A676DA00EE40C8 /* Assets */,
+				C17ECAAC29A6705300EE40C8 /* Extensions */,
+				C17ECA9929A66D6B00EE40C8 /* Model */,
+				C17ECAA929A66E5100EE40C8 /* Controllers */,
+				C17ECAA829A66E3100EE40C8 /* Views */,
+			);
+			path = Platzi;
+			sourceTree = "<group>";
+		};
+		C17ECAB829A6ACB300EE40C8 /* Vicwell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vicwell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,7 +411,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 269NMMFH34;
+				DEVELOPMENT_TEAM = RG9DD7MR44;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "who is that pokemon/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -424,7 +440,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 269NMMFH34;
+				DEVELOPMENT_TEAM = RG9DD7MR44;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "who is that pokemon/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

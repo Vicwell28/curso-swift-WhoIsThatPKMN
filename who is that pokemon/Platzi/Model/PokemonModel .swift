@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+
+struct pokemonModel {
+    let name : String
+    let imageURL : String
+}
