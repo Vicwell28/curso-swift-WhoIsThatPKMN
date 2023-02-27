@@ -43,6 +43,18 @@ class PokemonViewController: UIViewController {
         self.showLifecycle("viewDidDisappear()", for: self.description)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToResults" {
+            let resultsViewController = segue.destination as! ResultsViewController
+            
+            print("SE VA : \(self.imageData) ,  \(self.countCorrectAnswers) , \(self.correctAnswer)")
+            
+            resultsViewController.txtimagePokemon = self.imageData
+            resultsViewController.finalScore = self.countCorrectAnswers
+            resultsViewController.txtlablePokemon = self.correctAnswer
+        }
+    }
+    
     
     // MARK: - IBOutlet
     @IBOutlet weak var pokemonImage : UIImageView!
@@ -57,6 +69,7 @@ class PokemonViewController: UIViewController {
     private var correctAnswer : String = ""
     private var correctAnswersImage : String = ""
     private var countCorrectAnswers : Int = 0
+    private var imageData : String = ""
     
     // MARK: - Private let / var
     
@@ -67,20 +80,18 @@ class PokemonViewController: UIViewController {
         if self.correctAnswer.lowercased().elementsEqual(self.answersButtons[sender.tag].titleLabel!.text!.lowercased()) {
             self.answersButtons[sender.tag].layer.borderColor = UIColor.green.cgColor
             self.answersButtons[sender.tag].layer.borderWidth = 2
-            self.countCorrectAnswers += 1
-            self.labelMessage.text = "Si, es un \(self.answersButtons[sender.tag].titleLabel!.text!.capitalized)"
-            
-            Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { Timer in
+            Timer.scheduledTimer(withTimeInterval: 0.8, repeats: false) { Timer in
+                self.countCorrectAnswers += 1
                 self.reloadGame(sender)
             }
             
         } else {
             self.answersButtons[sender.tag].layer.borderColor = UIColor.red.cgColor
             self.answersButtons[sender.tag].layer.borderWidth = 2
-            self.countCorrectAnswers = 0
-            Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { Timer in
+            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { Timer in
+                self.performSegue(withIdentifier: "goToResults", sender: self)
+                self.countCorrectAnswers = 0
                 self.reloadGame(sender)
-                //MANDAR A LA SIGUENTE PANTALLA
         }
     }
 }
@@ -116,6 +127,8 @@ extension PokemonViewController : ImageMangerDelegate {
         }
         
         DispatchQueue.main.async {
+            self.imageData =  pokemonImage!.imgaeURL
+            
             self.pokemonImage.kf.setImage(with: URL(string: pokemonImage!.imgaeURL)!, options: [
                 .processor(ColorControlsProcessor(brightness: -1, contrast: 1, saturation: 1, inputEV: 0))
             ])
@@ -133,9 +146,9 @@ extension PokemonViewController : PokemonManagerDelegate{
         
         let index = Int.random(in: 0...3)
         
-        let imageData = pok[index].imageURL
+        let imageDataS = pok[index].imageURL
         
-        self.pokemonImageManager.fetchRequest(with: imageData)
+        self.pokemonImageManager.fetchRequest(with: imageDataS)
         
         self.correctAnswer = pok[index].name
         

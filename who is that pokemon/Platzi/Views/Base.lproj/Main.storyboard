@@ -241,6 +241,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Jugar de nuevo">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="21"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="TouchUpReloadGame:" destination="sxe-a0-BaB" eventType="touchUpInside" id="DvB-Pp-Sr9"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pika" translatesAutoresizingMaskIntoConstraints="NO" id="OZ6-lb-sRR">
                                 <rect key="frame" x="32" y="183.5" width="350" height="350"/>
@@ -282,6 +285,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7ka-GE-nL3"/>
+                    <connections>
+                        <outlet property="imgViewPokemon" destination="OZ6-lb-sRR" id="T8g-JB-n2O"/>
+                        <outlet property="lablePokemon" destination="4H0-C6-Jk3" id="nTx-Hp-0en"/>
+                        <outlet property="lableScore" destination="KpJ-4S-0P8" id="XB2-YC-C4W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h42-9x-0YT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

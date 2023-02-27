@@ -26,6 +26,7 @@
 		C17ECAB029A6708D00EE40C8 /* UIViewShowLifeCycle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17ECAAF29A6708D00EE40C8 /* UIViewShowLifeCycle+Extension.swift */; };
 		C17ECAB529A676F400EE40C8 /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C17ECAB329A676F400EE40C8 /* 1.jpeg */; };
 		C17ECAB629A676F400EE40C8 /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C17ECAB429A676F400EE40C8 /* 2.jpeg */; };
+		C1DAD32629AD5037005FC644 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DAD32529AD5037005FC644 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		C17ECAAF29A6708D00EE40C8 /* UIViewShowLifeCycle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewShowLifeCycle+Extension.swift"; sourceTree = "<group>"; };
 		C17ECAB329A676F400EE40C8 /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
 		C17ECAB429A676F400EE40C8 /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpeg; sourceTree = "<group>"; };
+		C1DAD32529AD5037005FC644 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			children = (
 				039F9E032898214F00B69144 /* PokemonViewController.swift */,
 				C17ECAAA29A66F1A00EE40C8 /* Test+ViewController.swift */,
+				C1DAD32529AD5037005FC644 /* ResultsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				039F9E042898214F00B69144 /* PokemonViewController.swift in Sources */,
 				C17ECAB029A6708D00EE40C8 /* UIViewShowLifeCycle+Extension.swift in Sources */,
 				039F9E002898214F00B69144 /* AppDelegate.swift in Sources */,
+				C1DAD32629AD5037005FC644 /* ResultsViewController.swift in Sources */,
 				039F9E022898214F00B69144 /* SceneDelegate.swift in Sources */,
 				C17ECAA329A66DEC00EE40C8 /* ImageManager.swift in Sources */,
 				C17ECAA529A66DF600EE40C8 /* ImageModel.swift in Sources */,
