@@ -26,6 +26,11 @@
 		C17ECAB029A6708D00EE40C8 /* UIViewShowLifeCycle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17ECAAF29A6708D00EE40C8 /* UIViewShowLifeCycle+Extension.swift */; };
 		C17ECAB529A676F400EE40C8 /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C17ECAB329A676F400EE40C8 /* 1.jpeg */; };
 		C17ECAB629A676F400EE40C8 /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C17ECAB429A676F400EE40C8 /* 2.jpeg */; };
+		C184F89729AFC6A1005063DF /* API+Escaping.swift in Sources */ = {isa = PBXBuildFile; fileRef = C184F89629AFC6A1005063DF /* API+Escaping.swift */; };
+		C184F89929AFCA80005063DF /* API+Escaping+Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = C184F89829AFCA80005063DF /* API+Escaping+Env.swift */; };
+		C184F89B29AFCBD1005063DF /* API+Escaping+HTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = C184F89A29AFCBD1005063DF /* API+Escaping+HTTPMethods.swift */; };
+		C184F89F29AFCD5A005063DF /* API+Escaping+Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C184F89E29AFCD5A005063DF /* API+Escaping+Endpoints.swift */; };
+		C184F8A129AFCD8D005063DF /* API+Escaping+GetConf.swift in Sources */ = {isa = PBXBuildFile; fileRef = C184F8A029AFCD8D005063DF /* API+Escaping+GetConf.swift */; };
 		C1DAD32629AD5037005FC644 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DAD32529AD5037005FC644 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +55,11 @@
 		C17ECAAF29A6708D00EE40C8 /* UIViewShowLifeCycle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewShowLifeCycle+Extension.swift"; sourceTree = "<group>"; };
 		C17ECAB329A676F400EE40C8 /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
 		C17ECAB429A676F400EE40C8 /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpeg; sourceTree = "<group>"; };
+		C184F89629AFC6A1005063DF /* API+Escaping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Escaping.swift"; sourceTree = "<group>"; };
+		C184F89829AFCA80005063DF /* API+Escaping+Env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Escaping+Env.swift"; sourceTree = "<group>"; };
+		C184F89A29AFCBD1005063DF /* API+Escaping+HTTPMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Escaping+HTTPMethods.swift"; sourceTree = "<group>"; };
+		C184F89E29AFCD5A005063DF /* API+Escaping+Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Escaping+Endpoints.swift"; sourceTree = "<group>"; };
+		C184F8A029AFCD8D005063DF /* API+Escaping+GetConf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Escaping+GetConf.swift"; sourceTree = "<group>"; };
 		C1DAD32529AD5037005FC644 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -248,6 +258,11 @@
 		C184F88D29AFB40C005063DF /* Escaping */ = {
 			isa = PBXGroup;
 			children = (
+				C184F89829AFCA80005063DF /* API+Escaping+Env.swift */,
+				C184F89A29AFCBD1005063DF /* API+Escaping+HTTPMethods.swift */,
+				C184F89E29AFCD5A005063DF /* API+Escaping+Endpoints.swift */,
+				C184F8A029AFCD8D005063DF /* API+Escaping+GetConf.swift */,
+				C184F89629AFC6A1005063DF /* API+Escaping.swift */,
 			);
 			path = Escaping;
 			sourceTree = "<group>";
@@ -403,9 +418,13 @@
 				C17ECAB029A6708D00EE40C8 /* UIViewShowLifeCycle+Extension.swift in Sources */,
 				039F9E002898214F00B69144 /* AppDelegate.swift in Sources */,
 				C1DAD32629AD5037005FC644 /* ResultsViewController.swift in Sources */,
+				C184F89929AFCA80005063DF /* API+Escaping+Env.swift in Sources */,
 				039F9E022898214F00B69144 /* SceneDelegate.swift in Sources */,
+				C184F89B29AFCBD1005063DF /* API+Escaping+HTTPMethods.swift in Sources */,
 				C17ECAA329A66DEC00EE40C8 /* ImageManager.swift in Sources */,
+				C184F89729AFC6A1005063DF /* API+Escaping.swift in Sources */,
 				C17ECAA529A66DF600EE40C8 /* ImageModel.swift in Sources */,
+				C184F89F29AFCD5A005063DF /* API+Escaping+Endpoints.swift in Sources */,
 				C17ECAAE29A6707B00EE40C8 /* IBInspectable+Extension.swift in Sources */,
 				C17ECAA729A66E1000EE40C8 /* GameModel.swift in Sources */,
 				C17ECA9B29A66DA100EE40C8 /* PokemonData.swift in Sources */,
@@ -413,6 +432,7 @@
 				C17ECA9D29A66DB600EE40C8 /* PokemonManager .swift in Sources */,
 				C17ECAAB29A66F1A00EE40C8 /* Test+ViewController.swift in Sources */,
 				C17ECAA129A66DE100EE40C8 /* ImageData.swift in Sources */,
+				C184F8A129AFCD8D005063DF /* API+Escaping+GetConf.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
