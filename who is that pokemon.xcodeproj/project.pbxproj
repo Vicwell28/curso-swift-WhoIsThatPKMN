@@ -84,8 +84,11 @@
 		039F9DFE2898214F00B69144 /* who is that pokemon */ = {
 			isa = PBXGroup;
 			children = (
-				C17ECAB829A6ACB300EE40C8 /* Vicwell */,
-				C17ECAB729A6ACAC00EE40C8 /* Platzi */,
+				C184F89229AFB495005063DF /* Application */,
+				C184F88F29AFB441005063DF /* Resources */,
+				C184F88E29AFB425005063DF /* Utils */,
+				C184F88529AFB393005063DF /* Data */,
+				C17ECAB129A676DA00EE40C8 /* Assets */,
 				039F9DFF2898214F00B69144 /* AppDelegate.swift */,
 				039F9E012898214F00B69144 /* SceneDelegate.swift */,
 				039F9E0A2898214F00B69144 /* LaunchScreen.storyboard */,
@@ -98,33 +101,9 @@
 		C17ECA9929A66D6B00EE40C8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C17ECA9A29A66DA100EE40C8 /* PokemonData.swift */,
-				C17ECA9C29A66DB600EE40C8 /* PokemonManager .swift */,
-				C17ECA9E29A66DD800EE40C8 /* PokemonModel .swift */,
-				C17ECAA029A66DE100EE40C8 /* ImageData.swift */,
-				C17ECAA229A66DEC00EE40C8 /* ImageManager.swift */,
-				C17ECAA429A66DF600EE40C8 /* ImageModel.swift */,
-				C17ECAA629A66E1000EE40C8 /* GameModel.swift */,
+				C184F87F29AFAF78005063DF /* Platzi */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		C17ECAA829A66E3100EE40C8 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				039F9E052898214F00B69144 /* Main.storyboard */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		C17ECAA929A66E5100EE40C8 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				039F9E032898214F00B69144 /* PokemonViewController.swift */,
-				C17ECAAA29A66F1A00EE40C8 /* Test+ViewController.swift */,
-				C1DAD32529AD5037005FC644 /* ResultsViewController.swift */,
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		C17ECAAC29A6705300EE40C8 /* Extensions */ = {
@@ -153,23 +132,188 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
-		C17ECAB729A6ACAC00EE40C8 /* Platzi */ = {
+		C184F87F29AFAF78005063DF /* Platzi */ = {
 			isa = PBXGroup;
 			children = (
-				C17ECAB129A676DA00EE40C8 /* Assets */,
-				C17ECAAC29A6705300EE40C8 /* Extensions */,
-				C17ECA9929A66D6B00EE40C8 /* Model */,
-				C17ECAA929A66E5100EE40C8 /* Controllers */,
-				C17ECAA829A66E3100EE40C8 /* Views */,
+				C17ECA9A29A66DA100EE40C8 /* PokemonData.swift */,
+				C17ECA9C29A66DB600EE40C8 /* PokemonManager .swift */,
+				C17ECA9E29A66DD800EE40C8 /* PokemonModel .swift */,
+				C17ECAA029A66DE100EE40C8 /* ImageData.swift */,
+				C17ECAA229A66DEC00EE40C8 /* ImageManager.swift */,
+				C17ECAA429A66DF600EE40C8 /* ImageModel.swift */,
+				C17ECAA629A66E1000EE40C8 /* GameModel.swift */,
 			);
 			path = Platzi;
 			sourceTree = "<group>";
 		};
-		C17ECAB829A6ACB300EE40C8 /* Vicwell */ = {
+		C184F88029AFAF7F005063DF /* Platzi */ = {
+			isa = PBXGroup;
+			children = (
+				039F9E032898214F00B69144 /* PokemonViewController.swift */,
+				C17ECAAA29A66F1A00EE40C8 /* Test+ViewController.swift */,
+				C1DAD32529AD5037005FC644 /* ResultsViewController.swift */,
+			);
+			path = Platzi;
+			sourceTree = "<group>";
+		};
+		C184F88129AFAFA1005063DF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C184F88929AFB3EC005063DF /* Response */,
+				C184F88829AFB3E4005063DF /* Request */,
+				C184F88429AFB002005063DF /* Api */,
+				C184F88329AFAFCF005063DF /* AsyncAwit */,
+				C184F88229AFAFA8005063DF /* Escaping */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C184F88229AFAFA8005063DF /* Escaping */ = {
+			isa = PBXGroup;
+			children = (
+				C184F88B29AFB3F9005063DF /* Repository */,
+			);
+			path = Escaping;
+			sourceTree = "<group>";
+		};
+		C184F88329AFAFCF005063DF /* AsyncAwit */ = {
+			isa = PBXGroup;
+			children = (
+				C184F88A29AFB3F5005063DF /* Repository */,
+			);
+			path = AsyncAwit;
+			sourceTree = "<group>";
+		};
+		C184F88429AFB002005063DF /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				C184F88D29AFB40C005063DF /* Escaping */,
+				C184F88C29AFB401005063DF /* AsyncAwit */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		C184F88529AFB393005063DF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C184F88629AFB3A6005063DF /* PersistenStorages */,
+				C184F88129AFAFA1005063DF /* Networking */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C184F88629AFB3A6005063DF /* PersistenStorages */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Vicwell;
+			path = PersistenStorages;
+			sourceTree = "<group>";
+		};
+		C184F88829AFB3E4005063DF /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		C184F88929AFB3EC005063DF /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				C17ECA9929A66D6B00EE40C8 /* Model */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		C184F88A29AFB3F5005063DF /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		C184F88B29AFB3F9005063DF /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		C184F88C29AFB401005063DF /* AsyncAwit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AsyncAwit;
+			sourceTree = "<group>";
+		};
+		C184F88D29AFB40C005063DF /* Escaping */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Escaping;
+			sourceTree = "<group>";
+		};
+		C184F88E29AFB425005063DF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C17ECAAC29A6705300EE40C8 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C184F88F29AFB441005063DF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C184F89129AFB469005063DF /* Colors */,
+				C184F89029AFB460005063DF /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C184F89029AFB460005063DF /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		C184F89129AFB469005063DF /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		C184F89229AFB495005063DF /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C184F89529AFB4CF005063DF /* Storyboards */,
+				C184F89429AFB4B5005063DF /* ViewModels */,
+				C184F89329AFB4A1005063DF /* Views */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C184F89329AFB4A1005063DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C184F89429AFB4B5005063DF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C184F88029AFAF7F005063DF /* Platzi */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C184F89529AFB4CF005063DF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				039F9E052898214F00B69144 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
