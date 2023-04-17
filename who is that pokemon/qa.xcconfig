@@ -1,0 +1,14 @@
+//
+//  qa.xcconfig
+//  who is that pokemon
+//
+//  Created by soliduSystem on 01/03/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+
+
+server_url = www.vicwell.com
+pruebas = true

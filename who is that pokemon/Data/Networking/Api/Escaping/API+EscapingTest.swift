@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class Api_Escaping {
+final class Api_EscapingTest {
     
     typealias RequestCompletion = (_ data : Data?, _ err : String?, _ response : HTTPURLResponse?) -> Void
     
@@ -51,8 +51,6 @@ final class Api_Escaping {
     static private func buildRequest(for endpoint: ApiEndPoint) -> URLRequest? {
         
         print("2. Entramos al metodo buildRequestForEndpoint para consturi la request pro el endpoitn donde le pasamos por parametro el endpoint \(endpoint)")
-        
-        
         
         guard let urlComp = URLComponents(string: url)?.url else {
             return nil

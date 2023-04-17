@@ -295,6 +295,578 @@
             </objects>
             <point key="canvasLocation" x="972" y="795"/>
         </scene>
+        <!--Game Pokemon Escaping View Controller-->
+        <scene sceneID="yYU-M4-S70">
+            <objects>
+                <viewController id="DLv-Tw-Yg7" customClass="GamePokemonEscapingViewController" customModule="who_is_that_pokemon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TKl-ls-Ma1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Quién es este Pokémon?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLL-Oh-ZUj">
+                                <rect key="frame" x="27" y="74.5" width="360" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puntaje: 0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGU-6O-nUC">
+                                <rect key="frame" x="27" y="144" width="360" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="TIY-5w-iXW">
+                                <rect key="frame" x="79.5" y="231" width="255" height="255"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TIY-5w-iXW" secondAttribute="height" multiplier="1:1" id="itU-Yk-ZiS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sí, es un Pikachu" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sF-GK-yuO">
+                                <rect key="frame" x="27" y="525" width="360" height="25.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBQ-52-Qh6">
+                                <rect key="frame" x="27" y="604.5" width="360" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CBQ-52-Qh6" secondAttribute="height" multiplier="8:1" id="fja-oY-Ra4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Flaaffy">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="touchUpInside:" destination="DLv-Tw-Yg7" eventType="touchUpInside" id="iMR-7u-zey"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdz-7v-4Y5">
+                                <rect key="frame" x="27" y="672" width="360" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pdz-7v-4Y5" secondAttribute="height" multiplier="8:1" id="6fg-bx-ukS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Staravia">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="touchUpInside:" destination="DLv-Tw-Yg7" eventType="touchUpInside" id="F9L-sx-q6j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pD-VI-ZW3">
+                                <rect key="frame" x="27" y="739" width="360" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5pD-VI-ZW3" secondAttribute="height" multiplier="8:1" id="5Kd-m8-mth"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Carvanha">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="touchUpInside:" destination="DLv-Tw-Yg7" eventType="touchUpInside" id="L5X-ga-F7L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUR-7w-oQU">
+                                <rect key="frame" x="27" y="806.5" width="360" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dUR-7w-oQU" secondAttribute="height" multiplier="8:1" id="7jT-BU-1dF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Pikachu">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="touchUpInside:" destination="DLv-Tw-Yg7" eventType="touchUpInside" id="Lhq-gb-Mx1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GHb-wX-A4m"/>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pdz-7v-4Y5" firstAttribute="centerX" secondItem="TKl-ls-Ma1" secondAttribute="centerX" id="4L6-ke-NRE"/>
+                            <constraint firstItem="TIY-5w-iXW" firstAttribute="centerX" secondItem="TKl-ls-Ma1" secondAttribute="centerX" id="75j-9r-mWu"/>
+                            <constraint firstItem="5pD-VI-ZW3" firstAttribute="width" secondItem="TKl-ls-Ma1" secondAttribute="width" multiplier="0.869565" id="8Ho-uT-yN8"/>
+                            <constraint firstItem="CBQ-52-Qh6" firstAttribute="width" secondItem="TKl-ls-Ma1" secondAttribute="width" multiplier="0.869565" id="8rO-Sg-8J6"/>
+                            <constraint firstItem="dUR-7w-oQU" firstAttribute="centerX" secondItem="TKl-ls-Ma1" secondAttribute="centerX" id="9Q5-eg-eqj"/>
+                            <constraint firstItem="cLL-Oh-ZUj" firstAttribute="centerX" secondItem="TKl-ls-Ma1" secondAttribute="centerX" id="LfB-vm-eb6"/>
+                            <constraint firstItem="dUR-7w-oQU" firstAttribute="width" secondItem="TKl-ls-Ma1" secondAttribute="width" multiplier="0.869565" id="Mwk-v4-Ta1"/>
+                            <constraint firstItem="5pD-VI-ZW3" firstAttribute="centerX" secondItem="TKl-ls-Ma1" secondAttribute="centerX" id="OfE-AU-zkT"/>
+                            <constraint firstItem="dUR-7w-oQU" firstAttribute="centerY" secondItem="TKl-ls-Ma1" secondAttribute="centerY" multiplier="1.85" id="PG5-H6-HHR"/>
+                            <constraint firstItem="TIY-5w-iXW" firstAttribute="centerY" secondItem="TKl-ls-Ma1" secondAttribute="centerY" multiplier="0.8" id="Rjd-Ng-cSj"/>
+                            <constraint firstItem="CBQ-52-Qh6" firstAttribute="centerY" secondItem="TKl-ls-Ma1" secondAttribute="centerY" multiplier="1.4" id="Tdl-gE-P8z"/>
+                            <constraint firstItem="tGU-6O-nUC" firstAttribute="centerY" secondItem="TKl-ls-Ma1" secondAttribute="centerY" multiplier="0.35" id="TuJ-dd-7A7"/>
+                            <constraint firstItem="7sF-GK-yuO" firstAttribute="centerX" secondItem="TKl-ls-Ma1" secondAttribute="centerX" id="Xst-ea-FPi"/>
+                            <constraint firstItem="cLL-Oh-ZUj" firstAttribute="width" secondItem="TKl-ls-Ma1" secondAttribute="width" multiplier="0.869565" id="Zqd-tJ-S7U"/>
+                            <constraint firstItem="pdz-7v-4Y5" firstAttribute="width" secondItem="TKl-ls-Ma1" secondAttribute="width" multiplier="0.869565" id="ZrB-IP-CNh"/>
+                            <constraint firstItem="pdz-7v-4Y5" firstAttribute="centerY" secondItem="TKl-ls-Ma1" secondAttribute="centerY" multiplier="1.55" id="bYb-c2-yUv"/>
+                            <constraint firstItem="CBQ-52-Qh6" firstAttribute="centerX" secondItem="TKl-ls-Ma1" secondAttribute="centerX" id="eVh-vn-1BF"/>
+                            <constraint firstItem="7sF-GK-yuO" firstAttribute="centerY" secondItem="TKl-ls-Ma1" secondAttribute="centerY" multiplier="1.2" id="ffv-xS-dRN"/>
+                            <constraint firstItem="7sF-GK-yuO" firstAttribute="width" secondItem="TKl-ls-Ma1" secondAttribute="width" multiplier="0.869565" id="hEq-gb-SVF"/>
+                            <constraint firstItem="cLL-Oh-ZUj" firstAttribute="centerY" secondItem="TKl-ls-Ma1" secondAttribute="centerY" multiplier="0.2" id="i9G-Xa-XWs"/>
+                            <constraint firstItem="TIY-5w-iXW" firstAttribute="width" secondItem="TKl-ls-Ma1" secondAttribute="width" multiplier="0.615942" id="lZg-8g-LgY"/>
+                            <constraint firstItem="5pD-VI-ZW3" firstAttribute="centerY" secondItem="TKl-ls-Ma1" secondAttribute="centerY" multiplier="1.7" id="ojf-if-H9m"/>
+                            <constraint firstItem="tGU-6O-nUC" firstAttribute="centerX" secondItem="TKl-ls-Ma1" secondAttribute="centerX" id="rNz-x3-urr"/>
+                            <constraint firstItem="tGU-6O-nUC" firstAttribute="width" secondItem="TKl-ls-Ma1" secondAttribute="width" multiplier="0.869565" id="uJX-1E-XG5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelMessage" destination="7sF-GK-yuO" id="SVI-Kp-0av"/>
+                        <outlet property="lableScore" destination="tGU-6O-nUC" id="rPq-6x-2K9"/>
+                        <outlet property="pokemonImage" destination="TIY-5w-iXW" id="B5k-Wa-mL9"/>
+                        <outletCollection property="answersButtons" destination="CBQ-52-Qh6" collectionClass="NSMutableArray" id="ScC-6s-qMm"/>
+                        <outletCollection property="answersButtons" destination="pdz-7v-4Y5" collectionClass="NSMutableArray" id="LT0-yK-Ftw"/>
+                        <outletCollection property="answersButtons" destination="5pD-VI-ZW3" collectionClass="NSMutableArray" id="y55-ck-bWl"/>
+                        <outletCollection property="answersButtons" destination="dUR-7w-oQU" collectionClass="NSMutableArray" id="xCE-IM-E2X"/>
+                        <segue destination="djq-Mb-HVg" kind="presentation" identifier="goToResults" modalPresentationStyle="fullScreen" id="v5f-gU-nht"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SDs-nh-9Jl" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119" y="96"/>
+        </scene>
+        <!--Detail Game Pokemon Escaping View Controller-->
+        <scene sceneID="txu-MS-enS">
+            <objects>
+                <viewController id="djq-Mb-HVg" customClass="DetailGamePokemonEscapingViewController" customModule="who_is_that_pokemon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zuf-5p-dDy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perdiste, tu puntaje fue de 25." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Zt-4a-hVS">
+                                <rect key="frame" x="32" y="681.5" width="350" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MO5-q8-0sZ">
+                                <rect key="frame" x="27" y="804" width="360" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MO5-q8-0sZ" secondAttribute="height" multiplier="36:5" id="pWd-z9-MGs"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Jugar de nuevo">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="21"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="TouchUpReloadGame:" destination="djq-Mb-HVg" eventType="touchUpInside" id="yFL-sn-LpB"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pika" translatesAutoresizingMaskIntoConstraints="NO" id="DvR-Pw-RYy">
+                                <rect key="frame" x="32" y="183.5" width="350" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DvR-Pw-RYy" secondAttribute="height" multiplier="1:1" id="dQO-BX-e8w"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡OOOPS! Perdiste" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRP-SA-IAY">
+                                <rect key="frame" x="32" y="97" width="350" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No, es un Pikachu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLY-Kr-v8v">
+                                <rect key="frame" x="32" y="560.5" width="350" height="26"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QsR-Fl-Aaj"/>
+                        <color key="backgroundColor" red="0.92158359290000003" green="0.92158359290000003" blue="0.92158359290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jRP-SA-IAY" firstAttribute="width" secondItem="Zuf-5p-dDy" secondAttribute="width" multiplier="0.845411" id="5U3-h0-5Ee"/>
+                            <constraint firstItem="MO5-q8-0sZ" firstAttribute="centerX" secondItem="Zuf-5p-dDy" secondAttribute="centerX" id="77p-MG-yFT"/>
+                            <constraint firstItem="HLY-Kr-v8v" firstAttribute="width" secondItem="Zuf-5p-dDy" secondAttribute="width" multiplier="0.845411" id="AmO-5U-AMd"/>
+                            <constraint firstItem="MO5-q8-0sZ" firstAttribute="centerY" secondItem="Zuf-5p-dDy" secondAttribute="centerY" multiplier="1.85" id="NdN-bH-Nqz"/>
+                            <constraint firstItem="jRP-SA-IAY" firstAttribute="centerX" secondItem="Zuf-5p-dDy" secondAttribute="centerX" id="OHF-fz-0wi"/>
+                            <constraint firstItem="2Zt-4a-hVS" firstAttribute="centerX" secondItem="Zuf-5p-dDy" secondAttribute="centerX" id="Qy8-t8-Nzq"/>
+                            <constraint firstItem="jRP-SA-IAY" firstAttribute="centerY" secondItem="Zuf-5p-dDy" secondAttribute="centerY" multiplier="0.25" id="VHQ-Xq-hDt"/>
+                            <constraint firstItem="2Zt-4a-hVS" firstAttribute="width" secondItem="Zuf-5p-dDy" secondAttribute="width" multiplier="0.845411" id="VKQ-y6-Kqn"/>
+                            <constraint firstItem="DvR-Pw-RYy" firstAttribute="centerY" secondItem="Zuf-5p-dDy" secondAttribute="centerY" multiplier="0.8" id="X3s-Eq-PiF"/>
+                            <constraint firstItem="DvR-Pw-RYy" firstAttribute="width" secondItem="Zuf-5p-dDy" secondAttribute="width" multiplier="0.845411" id="hD0-4Q-oNz"/>
+                            <constraint firstItem="HLY-Kr-v8v" firstAttribute="centerY" secondItem="Zuf-5p-dDy" secondAttribute="centerY" multiplier="1.28" id="ly3-Wb-tag"/>
+                            <constraint firstItem="MO5-q8-0sZ" firstAttribute="width" secondItem="Zuf-5p-dDy" secondAttribute="width" multiplier="0.869565" id="oVa-IN-Zpi"/>
+                            <constraint firstItem="2Zt-4a-hVS" firstAttribute="centerY" secondItem="Zuf-5p-dDy" secondAttribute="centerY" multiplier="1.55" id="rLk-fw-Qx0"/>
+                            <constraint firstItem="DvR-Pw-RYy" firstAttribute="centerX" secondItem="Zuf-5p-dDy" secondAttribute="centerX" id="tZ0-k2-X6v"/>
+                            <constraint firstItem="HLY-Kr-v8v" firstAttribute="centerX" secondItem="Zuf-5p-dDy" secondAttribute="centerX" id="v46-P1-RcJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Bwg-vX-LeO"/>
+                    <connections>
+                        <outlet property="imgViewPokemon" destination="DvR-Pw-RYy" id="NsJ-Z1-8Aq"/>
+                        <outlet property="lablePokemon" destination="HLY-Kr-v8v" id="vTy-hU-O00"/>
+                        <outlet property="lableScore" destination="2Zt-4a-hVS" id="Dsa-vn-dm4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fg5-wR-zaW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="971" y="96"/>
+        </scene>
+        <!--Game Pokemon Async Await View Controller-->
+        <scene sceneID="yhm-Ha-jwE">
+            <objects>
+                <viewController id="7sc-TM-Hip" customClass="GamePokemonAsyncAwaitViewController" customModule="who_is_that_pokemon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qnV-4f-c5e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Quién es este Pokémon?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Aw-Ft-BDU">
+                                <rect key="frame" x="27" y="74.5" width="360" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puntaje: 0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OoA-jV-xe8">
+                                <rect key="frame" x="27" y="144" width="360" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="1HK-Vm-dty">
+                                <rect key="frame" x="79.5" y="231" width="255" height="255"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1HK-Vm-dty" secondAttribute="height" multiplier="1:1" id="ggy-Gz-nGj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sí, es un Pikachu" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgT-Ab-qHt">
+                                <rect key="frame" x="27" y="525" width="360" height="25.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3u8-CL-kGK">
+                                <rect key="frame" x="27" y="604.5" width="360" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3u8-CL-kGK" secondAttribute="height" multiplier="8:1" id="7xa-PR-i5a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Flaaffy">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="touchUpInside:" destination="7sc-TM-Hip" eventType="touchUpInside" id="9HB-Fi-ywe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgb-af-TBB">
+                                <rect key="frame" x="27" y="672" width="360" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cgb-af-TBB" secondAttribute="height" multiplier="8:1" id="IuB-zA-LCG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Staravia">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="touchUpInside:" destination="7sc-TM-Hip" eventType="touchUpInside" id="snn-vn-ypt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1C-EO-rll">
+                                <rect key="frame" x="27" y="739" width="360" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="P1C-EO-rll" secondAttribute="height" multiplier="8:1" id="gQA-1R-ZPz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Carvanha">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="touchUpInside:" destination="7sc-TM-Hip" eventType="touchUpInside" id="w5T-91-lIQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPF-y9-zCF">
+                                <rect key="frame" x="27" y="806.5" width="360" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DPF-y9-zCF" secondAttribute="height" multiplier="8:1" id="k2A-ut-JyK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Pikachu">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="touchUpInside:" destination="7sc-TM-Hip" eventType="touchUpInside" id="wJF-Gy-df2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="csQ-yO-b5N"/>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="P1C-EO-rll" firstAttribute="centerY" secondItem="qnV-4f-c5e" secondAttribute="centerY" multiplier="1.7" id="0Cj-hd-Ive"/>
+                            <constraint firstItem="OoA-jV-xe8" firstAttribute="centerY" secondItem="qnV-4f-c5e" secondAttribute="centerY" multiplier="0.35" id="2ut-4s-Jfv"/>
+                            <constraint firstItem="OoA-jV-xe8" firstAttribute="width" secondItem="qnV-4f-c5e" secondAttribute="width" multiplier="0.869565" id="39X-zf-8nn"/>
+                            <constraint firstItem="P1C-EO-rll" firstAttribute="width" secondItem="qnV-4f-c5e" secondAttribute="width" multiplier="0.869565" id="5P7-FO-v8Z"/>
+                            <constraint firstItem="cgb-af-TBB" firstAttribute="width" secondItem="qnV-4f-c5e" secondAttribute="width" multiplier="0.869565" id="5PY-4e-r96"/>
+                            <constraint firstItem="TgT-Ab-qHt" firstAttribute="centerX" secondItem="qnV-4f-c5e" secondAttribute="centerX" id="5lg-XX-Dow"/>
+                            <constraint firstItem="DPF-y9-zCF" firstAttribute="centerX" secondItem="qnV-4f-c5e" secondAttribute="centerX" id="6wB-7I-aFp"/>
+                            <constraint firstItem="TgT-Ab-qHt" firstAttribute="width" secondItem="qnV-4f-c5e" secondAttribute="width" multiplier="0.869565" id="84a-1w-p2U"/>
+                            <constraint firstItem="cgb-af-TBB" firstAttribute="centerX" secondItem="qnV-4f-c5e" secondAttribute="centerX" id="CYq-PP-Syf"/>
+                            <constraint firstItem="3u8-CL-kGK" firstAttribute="centerY" secondItem="qnV-4f-c5e" secondAttribute="centerY" multiplier="1.4" id="EBq-dl-BGF"/>
+                            <constraint firstItem="TgT-Ab-qHt" firstAttribute="centerY" secondItem="qnV-4f-c5e" secondAttribute="centerY" multiplier="1.2" id="Hzf-Lj-WkA"/>
+                            <constraint firstItem="3u8-CL-kGK" firstAttribute="width" secondItem="qnV-4f-c5e" secondAttribute="width" multiplier="0.869565" id="IV0-Ww-6u4"/>
+                            <constraint firstItem="1HK-Vm-dty" firstAttribute="centerX" secondItem="qnV-4f-c5e" secondAttribute="centerX" id="JOW-Mu-cfQ"/>
+                            <constraint firstItem="7Aw-Ft-BDU" firstAttribute="width" secondItem="qnV-4f-c5e" secondAttribute="width" multiplier="0.869565" id="QAt-vS-vyP"/>
+                            <constraint firstItem="P1C-EO-rll" firstAttribute="centerX" secondItem="qnV-4f-c5e" secondAttribute="centerX" id="S8y-o5-ZLj"/>
+                            <constraint firstItem="OoA-jV-xe8" firstAttribute="centerX" secondItem="qnV-4f-c5e" secondAttribute="centerX" id="XaX-vi-T2A"/>
+                            <constraint firstItem="DPF-y9-zCF" firstAttribute="width" secondItem="qnV-4f-c5e" secondAttribute="width" multiplier="0.869565" id="ZPC-Ad-qdE"/>
+                            <constraint firstItem="1HK-Vm-dty" firstAttribute="width" secondItem="qnV-4f-c5e" secondAttribute="width" multiplier="0.615942" id="afk-RQ-wgd"/>
+                            <constraint firstItem="DPF-y9-zCF" firstAttribute="centerY" secondItem="qnV-4f-c5e" secondAttribute="centerY" multiplier="1.85" id="mUC-HH-L7Z"/>
+                            <constraint firstItem="3u8-CL-kGK" firstAttribute="centerX" secondItem="qnV-4f-c5e" secondAttribute="centerX" id="n6a-dW-m9m"/>
+                            <constraint firstItem="1HK-Vm-dty" firstAttribute="centerY" secondItem="qnV-4f-c5e" secondAttribute="centerY" multiplier="0.8" id="nVF-8o-eIW"/>
+                            <constraint firstItem="cgb-af-TBB" firstAttribute="centerY" secondItem="qnV-4f-c5e" secondAttribute="centerY" multiplier="1.55" id="sxc-hz-GmI"/>
+                            <constraint firstItem="7Aw-Ft-BDU" firstAttribute="centerY" secondItem="qnV-4f-c5e" secondAttribute="centerY" multiplier="0.2" id="u14-U7-rzF"/>
+                            <constraint firstItem="7Aw-Ft-BDU" firstAttribute="centerX" secondItem="qnV-4f-c5e" secondAttribute="centerX" id="vRx-OT-RVq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelMessage" destination="TgT-Ab-qHt" id="a43-J7-HCF"/>
+                        <outlet property="lableScore" destination="OoA-jV-xe8" id="3aR-Qo-si3"/>
+                        <outlet property="pokemonImage" destination="1HK-Vm-dty" id="ozu-cC-GES"/>
+                        <outletCollection property="answersButtons" destination="3u8-CL-kGK" collectionClass="NSMutableArray" id="tOX-oq-dS9"/>
+                        <outletCollection property="answersButtons" destination="cgb-af-TBB" collectionClass="NSMutableArray" id="W6U-yg-NLN"/>
+                        <outletCollection property="answersButtons" destination="P1C-EO-rll" collectionClass="NSMutableArray" id="Ifl-pf-k0d"/>
+                        <outletCollection property="answersButtons" destination="DPF-y9-zCF" collectionClass="NSMutableArray" id="ADE-LX-z8V"/>
+                        <segue destination="mqw-ni-ty3" kind="presentation" identifier="goToResults" modalPresentationStyle="fullScreen" id="TvM-cO-bd8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y9u-3a-4kP" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119" y="-583"/>
+        </scene>
+        <!--Detail Game Pokemon Async Awati View Controller-->
+        <scene sceneID="ucn-Qq-7fi">
+            <objects>
+                <viewController id="mqw-ni-ty3" customClass="DetailGamePokemonAsyncAwatiViewController" customModule="who_is_that_pokemon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pw3-6t-bqJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perdiste, tu puntaje fue de 25." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywC-ES-8UA">
+                                <rect key="frame" x="32" y="681.5" width="350" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGf-Zc-jJd">
+                                <rect key="frame" x="27" y="804" width="360" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UGf-Zc-jJd" secondAttribute="height" multiplier="36:5" id="N2x-G6-SBI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Jugar de nuevo">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="21"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="TouchUpReloadGame:" destination="mqw-ni-ty3" eventType="touchUpInside" id="AAy-lA-h6e"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pika" translatesAutoresizingMaskIntoConstraints="NO" id="yny-R2-HWJ">
+                                <rect key="frame" x="32" y="183.5" width="350" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yny-R2-HWJ" secondAttribute="height" multiplier="1:1" id="4ep-nd-8Nj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡OOOPS! Perdiste" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiO-hJ-G8f">
+                                <rect key="frame" x="32" y="97" width="350" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No, es un Pikachu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8R-DR-vzJ">
+                                <rect key="frame" x="32" y="560.5" width="350" height="26"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="P6p-Ws-0NS"/>
+                        <color key="backgroundColor" red="0.92158359290000003" green="0.92158359290000003" blue="0.92158359290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iiO-hJ-G8f" firstAttribute="width" secondItem="Pw3-6t-bqJ" secondAttribute="width" multiplier="0.845411" id="1fR-Mq-7Si"/>
+                            <constraint firstItem="E8R-DR-vzJ" firstAttribute="width" secondItem="Pw3-6t-bqJ" secondAttribute="width" multiplier="0.845411" id="C08-Ji-se1"/>
+                            <constraint firstItem="yny-R2-HWJ" firstAttribute="width" secondItem="Pw3-6t-bqJ" secondAttribute="width" multiplier="0.845411" id="CS9-rQ-9H2"/>
+                            <constraint firstItem="ywC-ES-8UA" firstAttribute="width" secondItem="Pw3-6t-bqJ" secondAttribute="width" multiplier="0.845411" id="Hqf-Z6-mjk"/>
+                            <constraint firstItem="UGf-Zc-jJd" firstAttribute="centerX" secondItem="Pw3-6t-bqJ" secondAttribute="centerX" id="Isa-1g-esi"/>
+                            <constraint firstItem="UGf-Zc-jJd" firstAttribute="centerY" secondItem="Pw3-6t-bqJ" secondAttribute="centerY" multiplier="1.85" id="PQV-6K-PUD"/>
+                            <constraint firstItem="yny-R2-HWJ" firstAttribute="centerX" secondItem="Pw3-6t-bqJ" secondAttribute="centerX" id="SBx-1W-XE5"/>
+                            <constraint firstItem="iiO-hJ-G8f" firstAttribute="centerX" secondItem="Pw3-6t-bqJ" secondAttribute="centerX" id="XK9-cB-b6L"/>
+                            <constraint firstItem="iiO-hJ-G8f" firstAttribute="centerY" secondItem="Pw3-6t-bqJ" secondAttribute="centerY" multiplier="0.25" id="cNg-kn-ZBe"/>
+                            <constraint firstItem="UGf-Zc-jJd" firstAttribute="width" secondItem="Pw3-6t-bqJ" secondAttribute="width" multiplier="0.869565" id="djC-eQ-Oye"/>
+                            <constraint firstItem="ywC-ES-8UA" firstAttribute="centerY" secondItem="Pw3-6t-bqJ" secondAttribute="centerY" multiplier="1.55" id="kQ8-mL-fQs"/>
+                            <constraint firstItem="yny-R2-HWJ" firstAttribute="centerY" secondItem="Pw3-6t-bqJ" secondAttribute="centerY" multiplier="0.8" id="qQ7-C3-Vy6"/>
+                            <constraint firstItem="E8R-DR-vzJ" firstAttribute="centerY" secondItem="Pw3-6t-bqJ" secondAttribute="centerY" multiplier="1.28" id="rP2-NL-9Gj"/>
+                            <constraint firstItem="ywC-ES-8UA" firstAttribute="centerX" secondItem="Pw3-6t-bqJ" secondAttribute="centerX" id="yGx-wj-CvZ"/>
+                            <constraint firstItem="E8R-DR-vzJ" firstAttribute="centerX" secondItem="Pw3-6t-bqJ" secondAttribute="centerX" id="yvZ-EC-eis"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SOG-xA-VkL"/>
+                    <connections>
+                        <outlet property="imgViewPokemon" destination="yny-R2-HWJ" id="7WV-hB-pEJ"/>
+                        <outlet property="lablePokemon" destination="E8R-DR-vzJ" id="rTt-Lt-H86"/>
+                        <outlet property="lableScore" destination="ywC-ES-8UA" id="00F-sz-aTc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4dc-Cl-zTG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="970" y="-583"/>
+        </scene>
     </scenes>
     <resources>
         <image name="pika" width="158" height="158"/>

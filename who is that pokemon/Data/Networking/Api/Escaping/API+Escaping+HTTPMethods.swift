@@ -19,3 +19,15 @@ extension Api_Escaping {
     }
     
 }
+
+extension Api_EscapingTest {
+    
+    enum HTTPMethods : String {
+        case post = "POST"
+        case get = "GET"
+        case put = "PUT"
+        case delete = "DELETE"
+        case patch = "PATCH"
+    }
+    
+}

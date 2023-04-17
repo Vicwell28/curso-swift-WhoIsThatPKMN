@@ -16,3 +16,13 @@ extension Api_Escaping {
     
     
 }
+
+extension Api_EscapingTest {
+    
+    enum ApiEndPoint {
+        case getIndexPokemons(limit : Int)
+    }
+    
+    
+    
+}

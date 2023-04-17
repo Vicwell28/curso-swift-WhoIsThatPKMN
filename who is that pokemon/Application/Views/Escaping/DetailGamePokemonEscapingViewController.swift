@@ -1,14 +1,13 @@
 //
-//  ResultsViewController.swift
+//  DetailGamePokemonEscapingViewController.swift
 //  who is that pokemon
 //
-//  Created by soliduSystem on 27/02/23.
+//  Created by soliduSystem on 17/04/23.
 //
 
 import UIKit
-import Kingfisher
 
-class ResultsViewController: UIViewController {
+class DetailGamePokemonEscapingViewController: UIViewController {
     
     // MARK: - Override Func
     override func viewDidLoad() {
@@ -16,15 +15,10 @@ class ResultsViewController: UIViewController {
         self.showLifecycle("viewDidLoad()", for: self.description)
     }
     
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.showLifecycle("viewWillAppear()", for: self.description)
-        
-        self.lableScore.text = "Perdiste, tu puntaje fue de \(self.finalScore)"
-        
-        self.lablePokemon.text = "No, es un \(self.txtlablePokemon)"
-        
-        self.imgViewPokemon.kf.setImage(with: URL(string: self.txtimagePokemon)!)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -42,12 +36,11 @@ class ResultsViewController: UIViewController {
         self.showLifecycle("viewDidDisappear()", for: self.description)
     }
     
-    
     // MARK: - IBOutlet
-    
     @IBOutlet weak var imgViewPokemon: UIImageView!
     @IBOutlet weak var lableScore: UILabel!
     @IBOutlet weak var lablePokemon: UILabel!
+    
     // MARK: - Public let / var
     public var txtimagePokemon : String = ""
     public var finalScore : Int = 0
@@ -58,7 +51,6 @@ class ResultsViewController: UIViewController {
     
     
     // MARK: - IBAction
-    
     @IBAction func TouchUpReloadGame(_ sender: UIButton) {
         self.dismiss(animated: true)
     }
@@ -67,21 +59,21 @@ class ResultsViewController: UIViewController {
 
 
 // MARK: - Public Func
-extension ResultsViewController {
+extension DetailGamePokemonEscapingViewController {
     
 }
 
 // MARK: - Private Func
-extension ResultsViewController {
-
+extension DetailGamePokemonEscapingViewController {
+    
 }
 
 // MARK: - Services
-extension ResultsViewController {
+extension DetailGamePokemonEscapingViewController {
     
 }
 
 // MARK: - Other
-extension ResultsViewController {
+extension DetailGamePokemonEscapingViewController {
     
 }
